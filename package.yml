@@ -1,0 +1,18 @@
+name        : xcmiscproto
+version     : 1.2.2
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/xcmiscproto-1.2.2.tar.gz : 48013cfbe4bd5580925a854a43e2bccbb4c7a5a31128070644617b6dc7f8ef85
+license     :
+    - MIT
+summary     : XC-MISC Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines a protocol that provides Xlib two ways to query the server for available resource IDs.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
